@@ -1,0 +1,13 @@
+version: '3'
+
+   services:
+     chibi:
+      restart: unless-stopped
+      image: pysergio/chibi:latest
+      environment:
+        TELEGRAM_BOT_TOKEN: 6696461719:AAFG4HavKkggTF3immo3YA2AMbnt-UXUPug
+      volumes:
+        - chibi_data:/app/data
+   
+   volumes:
+     chibi_data:
